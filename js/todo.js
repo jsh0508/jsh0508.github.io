@@ -23,10 +23,11 @@ function paintToDo(newTodo){
     const button = document.createElement("button");
     li.id = newTodo.id;
     button.innerText = "x";
+    //button.style = "border-radius: 5px";
     button.addEventListener("click", deleteToDo);
     li.appendChild(span);
     li.appendChild(button);
-    span.innerText = newTodo.text;
+    span.innerText = `${newTodo.text} `;
     toDoList.appendChild(li);
 
 }
